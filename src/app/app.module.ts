@@ -14,8 +14,6 @@ import { InfoTrabajoComponent } from './components/info-trabajo/info-trabajo.com
 import { ContactoComponent } from './components/contacto/contacto.component';
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
