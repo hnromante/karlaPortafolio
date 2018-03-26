@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { InfoTrabajoComponent } from './components/info-trabajo/info-trabajo.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 
 
@@ -22,7 +23,8 @@ import { InfoTrabajoComponent } from './components/info-trabajo/info-trabajo.com
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    InfoTrabajoComponent
+    InfoTrabajoComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
