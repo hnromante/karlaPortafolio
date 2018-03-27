@@ -4,7 +4,17 @@ import { NgModule } from '@angular/core';
 // RUTAS
 // =============================================================================
 import { app_routing } from './app.routes';
-
+// =============================================================================
+// SERVICIOS
+// =============================================================================
+import { InformacionService } from './services/informacion.service';
+// =============================================================================
+// ANGULAR
+// =============================================================================
+import {HttpModule} from "@angular/http";
+// =============================================================================
+// COMPONENTES
+// =============================================================================
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -26,9 +36,11 @@ import { ContactoComponent } from './components/contacto/contacto.component';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     app_routing
+    
   ],
-  providers: [],
+  providers: [InformacionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
