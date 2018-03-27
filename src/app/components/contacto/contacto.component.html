@@ -20,8 +20,8 @@
 <div class="ae-container-fluid ae-container-fluid--inner rk-main animated fadeIn">
   <div class="ae-grid">
     <div class="ae-grid__item item-lg-6 item-lg--offset-7">
-      <h4 class="ae-u-bolder au-mb-3 conatct__title">Contact Us</h4>
-      <p class="au-mb-4 contact__desc">Say hello using the <a href="#contact-form">contact form </a>below! <br>We're standing by to help.</p>
+      <h4 class="ae-u-bolder au-mb-3 conatct__title">Contacto</h4>
+      <p class="au-mb-4 contact__desc">Enviame un mensaje con el <a href="#contact-form">formulario </a>de abajo. <br>En que te puedo ayudar.</p>
     </div>
   </div>
   <div class="ae-grid">
@@ -32,16 +32,9 @@
     </div>
     <div class="ae-grid__item item-lg-6">
       <div class="ae-grid ae-grid--collapse">
-        <div class="ae-grid__item item-lg-2 au-v-hidden au-lg-v-visible">
-          <button id="map-arrow" class="arrow-button arrow-button--nospace arrow-button--center arrow-button--flip">
-            <svg>
-              <use xlink:href="assets/img/symbols.svg#arrow"></use>
-            </svg>
-          </button>
-        </div>
         <div class="ae-grid__item item-lg-10 au-xs-ta-center au-lg-ta-left">
-          <p class="au-mb-4 contact__addr">123 Everystreet Crescent<br>Somewheresville, CA<br>12345 USA</p>
-          <p> <span class="contact__phone"> <span class="rk-light-color">Phone  </span> (301) 123-4567</span><br><span class="contact__email au-block au-truncate"> <span class="rk-light-color">Email &nbsp;&nbsp; </span><a href="#0">infocompany@contact.com</a></span></p>
+          <p class="au-mb-4 contact__addr"></p>
+          <p> <span class="contact__phone"> <span class="rk-light-color">Telefono  </span> {{_is.contacto.telefono}}</span><br><span class="contact__email au-block au-truncate"> <span class="rk-light-color">Email &nbsp;&nbsp; </span><a href="mailTo:{{_is.contacto.email}}">{{_is.contacto.email}}</a></span></p>
         </div>
         <div class="contact_spacer au-none au-lg-block"></div>
       </div>
