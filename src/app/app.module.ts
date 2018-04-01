@@ -22,6 +22,7 @@ import { PortafolioComponent } from './components/portafolio/portafolio.componen
 import { AboutComponent } from './components/about/about.component';
 import { InfoTrabajoComponent } from './components/info-trabajo/info-trabajo.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { TrabajosService } from './services/trabajos.service';
 
 
 @NgModule({
@@ -40,7 +41,7 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     app_routing
     
   ],
-  providers: [InformacionService],
+  providers: [InformacionService, TrabajosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

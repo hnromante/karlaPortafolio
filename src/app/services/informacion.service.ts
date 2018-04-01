@@ -37,7 +37,7 @@ export class InformacionService {
     this.http.get("https://karlafolio.firebaseio.com/contacto.json").
               subscribe(data => { 
                 this.contacto = data.json();
-                console.log(this.contacto);
+                //console.log(this.contacto);
                 this.cargadaContacto = true;
 
               })
