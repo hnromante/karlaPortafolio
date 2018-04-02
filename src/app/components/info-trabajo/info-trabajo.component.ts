@@ -9,6 +9,7 @@ import { TrabajosService } from '../../services/trabajos.service';
 export class InfoTrabajoComponent {
 
   trabajo:any = undefined;
+  cod:string = undefined;
 
   constructor(private route:ActivatedRoute,
               private _ts:TrabajosService) {
@@ -18,6 +19,7 @@ export class InfoTrabajoComponent {
         // console.log(parametros['id']);
         _ts.cargar_trabajo(parametros['id']).subscribe(res=>{
           this.trabajo = res.json(); 
+          this.cod = parametros['id'];
           console.log(this.trabajo);
         })
       }

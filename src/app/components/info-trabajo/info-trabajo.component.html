@@ -1,5 +1,9 @@
 <div *ngIf="trabajo" class="animated fadeIn">
-  <header class="rk-portfolio-cover  item-inside-1">
+  <!-- ===================================================================== -->
+  <!-- item-inside-1, NG STYLE para cargar dinamicamente el fondo de la imagne -->
+  <!-- ===================================================================== -->
+  <header [ngStyle]="{'background-image':'url(assets/productos/'+ cod +'/main.jpg)'}"
+  class="rk-portfolio-cover  ">
     <div class="item-inside__meta">
       <h1 class="ae-u-bolder rk-portfolio-title ">{{trabajo.producto}}</h1>
       <p class="ae-theta rk-portfolio-category ">{{trabajo.categoria}}</p>
@@ -9,6 +13,7 @@
     <div class="ae-grid ae-grid--collapse rk-portfolio-info ">
       <div class="ae-grid__item item-lg-8 item-sm--center au-xs-ta-center au-lg-ta-left">
         <h2 class="rk-portfolio-inner-title ">{{trabajo.producto}}</h2>
+        <p class="ae-eta">{{trabajo.resumen}}</p>
       </div>
       <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right rk-portfolio-details">
         <p class="rk-portfolio-inner-client "><span class="ae-lambda">Creado para: </span><span class="ae-u-bolder">ramo XXX</span></p>
@@ -23,10 +28,10 @@
         <h4 class="ae-u-bolder">{{trabajo.subtitulo1}}</h4>
         <p class="ae-eta">{{trabajo.desc1}}</p>
       </div>
-      <div class="ae-grid__item item-lg-6 item-lg--offset-1"><img src="assets/img/inner-1.jpg" alt="Urku Portfolio"></div>
+      <div class="ae-grid__item item-lg-6 item-lg--offset-1"><img src="assets/productos/{{cod}}/pic-1.jpg"></div>
     </div>
     <div class="ae-grid ae-grid--collapse">
-      <div class="ae-grid__item item-lg-8"><img src="assets/img/inner-2.jpg" alt="Urku Portfolio"></div>
+      <div class="ae-grid__item item-lg-8"><img src="assets/productos/{{cod}}/pic-2.jpg" ></div>
       <div class="ae-grid__item item-lg-3 item-lg--offset-1 au-lg-ptp-1">
         <p>{{trabajo.desc2}}</p>
         <p class="ae-u-bolder">{{trabajo.subtitulo2}}</p>

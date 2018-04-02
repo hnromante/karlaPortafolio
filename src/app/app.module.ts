@@ -23,6 +23,7 @@ import { AboutComponent } from './components/about/about.component';
 import { InfoTrabajoComponent } from './components/info-trabajo/info-trabajo.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { TrabajosService } from './services/trabajos.service';
+import { BuscarComponent } from './components/buscar/buscar.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { TrabajosService } from './services/trabajos.service';
     PortafolioComponent,
     AboutComponent,
     InfoTrabajoComponent,
-    ContactoComponent
+    ContactoComponent,
+    BuscarComponent
   ],
   imports: [
     BrowserModule,
