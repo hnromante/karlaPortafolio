@@ -24,12 +24,19 @@ export class TrabajosService {
             //   console.log(res.json());
             //   this.trabajos = res.json();
             //   this.cargando = false;
-            // },1500)
+            // },1500)  
             this.trabajos = res.json();
             this.cargando = false;
-          })
+          }) 
     }
 
+  }
+  // ===========================================================================
+  // Cargar info trabajo
+  // ===========================================================================
+
+  public cargar_trabajo(cod:string){
+    return this.http.get("https://karlafolio.firebaseio.com/trabajos/"+cod+".json");
   }
 }
 

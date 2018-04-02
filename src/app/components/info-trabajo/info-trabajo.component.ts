@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TrabajosService } from '../../services/trabajos.service';
 
 @Component({
   selector: 'app-info-trabajo',
@@ -7,12 +8,18 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class InfoTrabajoComponent {
 
-  constructor(private route:ActivatedRoute) {
+  producto:any = undefined;
+
+  constructor(private route:ActivatedRoute,
+              private _ts:TrabajosService) {
     route.params.subscribe(
       parametros=>{
-        console.log(parametros);
-        console.log(parametros['id']);
-        
+        // console.log(parametros);
+        // console.log(parametros['id']);
+        _ts.cargar_trabajo(parametros['id']).subscribe(res=>{
+          this.producto = res.json();
+          console.log(this.producto);
+        })
       }
     )
    }
