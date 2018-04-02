@@ -8,7 +8,7 @@ import {PortafolioComponent,
 const app_routes: Routes = [
     { path: 'inicio', component: PortafolioComponent },
     { path: 'acerca', component: AboutComponent },
-    { path: 'trabajo', component: InfoTrabajoComponent },
+    { path: 'trabajo/:id', component: InfoTrabajoComponent },
     { path: 'contacto', component: ContactoComponent },
 ];
 

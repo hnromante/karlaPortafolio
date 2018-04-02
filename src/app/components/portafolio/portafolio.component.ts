@@ -1,4 +1,5 @@
 import { Component} from '@angular/core';
+import { TrabajosService } from '../../services/trabajos.service';
 
 @Component({
   selector: 'app-portafolio',
@@ -6,6 +7,6 @@ import { Component} from '@angular/core';
 })
 export class PortafolioComponent {
 
-  constructor() { }
+  constructor(private _ts:TrabajosService) { }
 
 }
