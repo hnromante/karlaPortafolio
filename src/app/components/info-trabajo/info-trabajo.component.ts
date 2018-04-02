@@ -8,7 +8,7 @@ import { TrabajosService } from '../../services/trabajos.service';
 })
 export class InfoTrabajoComponent {
 
-  producto:any = undefined;
+  trabajo:any = undefined;
 
   constructor(private route:ActivatedRoute,
               private _ts:TrabajosService) {
@@ -17,8 +17,8 @@ export class InfoTrabajoComponent {
         // console.log(parametros);
         // console.log(parametros['id']);
         _ts.cargar_trabajo(parametros['id']).subscribe(res=>{
-          this.producto = res.json();
-          console.log(this.producto);
+          this.trabajo = res.json(); 
+          console.log(this.trabajo);
         })
       }
     )
